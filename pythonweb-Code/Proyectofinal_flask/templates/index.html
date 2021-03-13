@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block container %}
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">Packing Flask</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('login') }}" class="button">Login</a></li>
+							<li><a href="{{ url_for('register') }}" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					
+					<h2><p>Packages everywhere</p></section></h2>
+				</section>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy;All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+			
+{% endblock container %}

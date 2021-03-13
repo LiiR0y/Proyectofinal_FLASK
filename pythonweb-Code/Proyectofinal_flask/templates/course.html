@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block container %}
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Paquetes</th>
+            <th>Logs</th>
+            <th>Pagos</th>
+        </tr>
+    </thead>
+    <tbody>
+     {% for dato in datos %}
+        <tr>
+            <td>{{ dato[0] }}</td>
+            <td>{{ dato[1] }}</td>
+            <td>{{ dato[2] }}</td>
+            <td>{{ dato[3] }}</td>
+            <td>{{ dato[4] }}</td>
+            <td>{{ dato[5] }}</td>
+    <td>{{ dato[8] }}</td>
+    <td>{{ dato[7] }}</td>
+            
+        </tr>
+
+     {% endfor %}
+    </tbody>
+</table>
+
+			
+{% endblock container %}
